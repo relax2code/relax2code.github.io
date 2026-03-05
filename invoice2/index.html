@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Firewood invoice </title>
-    <link rel="stylesheet" href="invoice.css">
-    <link rel="stylesheet" href="invoice-pdf.css">
+    <link rel="stylesheet" href="./invoice.css">
+    <link rel="stylesheet" href="./invoice-pdf.css">
+    <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
 </head>
-
 <body style="margin:0; padding:0; background-color:#0000;">
-    <div class="page-container">
-        Page
-        <span class="page"></span>
-        of
-        <span class="pages"></span>
-    </div>
-
     <div class="logo-container">
         <img style="height: 18px" src="https://app.useanvil.com/img/email-logo-black.png">
     </div>
-
     <table class="invoice-info-container">
         <tr>
             <td rowspan="2" class="client-name">
@@ -50,7 +41,6 @@
             </td>
         </tr>
     </table>
-
     <table class="line-items-container">
         <thead>
             <tr>
@@ -81,7 +71,6 @@
             </tr>
         </tbody>
     </table>
-
     <table class="line-items-container has-bottom-border">
         <thead>
             <tr>
@@ -105,7 +94,6 @@
             </tr>
         </tbody>
     </table>
-
     <div class="footer">
         <div class="footer-info">
             <span>hello@useanvil.com</span> |
@@ -117,6 +105,6 @@
             <span>Thank you!</span>
         </div>
     </div>
+    <script type="module" src="./app.js"></script>
 </body>
-
 </html>
